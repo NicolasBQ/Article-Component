@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 90%;
+  max-width: 30rem;
+  text-align: left;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.main__img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  vertical-align: top;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.content-text {
+  margin-bottom: 2rem;
+}
+
+.content-text__text {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.content-text__paragraph {
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.content-social__picture {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.content-social__button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #ecf2f8;
+}
+
+.content-social__disable {
+  display: none;
+}
+
+.content-share {
+  display: none;
+  padding: 1.3rem;
+  background-color: #48556a;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.content-share__text {
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+.content-share__icon {
+  height: 25px;
+  width: 25px;
+}
+
+.content-share__icon + .content-share__icon {
+  margin-left: 0.8rem;
+}
+
+.content-share__button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #6d7f97;
+}
+
+body {
+  background-color: #ecf2f8;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Manrope", sans-serif;
+  padding: 2rem 0;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.light-text {
+  font-weight: 500;
+}
+
+.dark-text {
+  color: #48556a;
+}
+
+.soft-text {
+  color: #6d7f97;
+}
+
+.grayish-text {
+  color: #9eafc2;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,39 @@
+@import "config";
+@import "content";
+
+body {
+  background-color: $light-gayish-blue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  padding: 2rem 0;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.light-text {
+  font-weight: 500;
+}
+
+.dark-text {
+  color: $dark-blue;
+}
+
+.soft-text {
+  color: $soft-blue;
+}
+
+.grayish-text {
+  color: $grayish-blue;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
