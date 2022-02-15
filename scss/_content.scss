@@ -1,9 +1,10 @@
 .main {
   width: 90%;
-  max-width: 30rem;
+  max-width: 50rem;
   text-align: left;
   background-color: $white;
   border-radius: 1rem;
+  position: relative;
 
   &__img {
     width: 100%;
@@ -13,10 +14,8 @@
 }
 
 .content {
-  padding: 2rem;
-
   &-text {
-    margin-bottom: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     &__text {
       font-size: 1.2rem;
       text-align: justify;
@@ -31,45 +30,62 @@
   }
 
   &-social {
+    display: none;
+    padding: 1.5rem 2rem;
     &__picture {
-      height: 50px;
-      width: 50px;
+      height: 35px;
+      width: 35px;
       border-radius: 50%;
     }
 
-    &__button {
-      @include button;
-      background-color: $light-gayish-blue;
-    }
-
-    &__disable {
-      display: none;
+    &__name {
+      margin-left: 1rem;
     }
   }
 
   &-share {
     display: none;
-    padding: 1.3rem;
     background-color: $dark-blue;
+    padding: 1.9375rem 2rem;
+    width: 100%;
     border-radius: 0 0 1rem 1rem;
 
-    &__text {
-      font-size: 1rem;
-      letter-spacing: 3px;
+    &__share {
+      letter-spacing: 5px;
+      color: $grayish-blue;
     }
 
-    &__icon {
-      height: 25px;
-      width: 25px;
+    &__socials {
+      margin-left: 1rem;
 
-      & + & {
-        margin-left: 0.8rem;
+      &-icon {
+        width: 25px;
+        height: 25px;
+
+        & + & {
+          margin-left: 0.5rem;
+        }
       }
     }
+  }
+}
 
-    &__button {
-      @include button;
-      background-color: $soft-blue;
-    }
+.share-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  bottom: 30px;
+  background-color: $light-gayish-blue;
+
+  &__active {
+    background-color: $soft-blue;
+  }
+
+  &__fill {
+    fill: $white;
   }
 }

@@ -1,0 +1,45 @@
+@include for-laptop-up {
+  .main {
+    display: flex;
+
+    &__img {
+      border-radius: 1rem 0 0 1rem;
+      height: 100%;
+
+      &-container {
+        width: 40%;
+      }
+    }
+  }
+
+  .content {
+    width: 60%;
+    position: relative;
+    &-social {
+      display: flex;
+      align-items: center;
+    }
+
+    &-share {
+      width: 60%;
+      padding: 0.8rem;
+      position: absolute;
+      z-index: 10;
+      bottom: 38%;
+      right: -20%;
+      border-radius: 0.5rem;
+      justify-content: center;
+      box-shadow: 2px 2px 25px 0 rgba(#000, 0.25);
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -27%;
+        background-color: #000;
+        border-left: 15px solid rgba($white, 0.93);
+        border-right: 15px solid rgba($white, 0.93);
+        border-top: 15px solid $dark-blue;
+      }
+    }
+  }
+}

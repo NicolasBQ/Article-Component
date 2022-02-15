@@ -1,5 +1,6 @@
 @import "config";
 @import "content";
+@import "responsive";
 
 body {
   background-color: $light-gayish-blue;
@@ -34,6 +35,24 @@ body {
 
 .flex-row {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 700;
+  color: $soft-blue;
+  &__text {
+    font-size: 1rem;
+  }
+
+  &__link {
+    color: inherit;
+  }
+
+  &__link:hover {
+    text-decoration: none;
+    color: $dark-blue;
+  }
 }
